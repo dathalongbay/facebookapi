@@ -33,5 +33,5 @@ echo "<pre>";
 print_r($graphNode);
 echo "</pre>";
 
-var_dump($graphNode->getField("engagement"));
+var_dump($graphNode->getField("engagement")->getField("reaction_count"));
 var_dump($graphNode->getField("reaction_count"));

@@ -32,3 +32,7 @@ $graphNode = $response->getGraphNode();
 echo "<pre>";
 print_r($graphNode);
 echo "</pre>";
+
+echo "<pre>";
+print_r($graphNode->reaction_count);
+echo "</pre>";

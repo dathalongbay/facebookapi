@@ -20,7 +20,7 @@ function facebook_count($url){
 
 }
 
-$fb = facebook_count('https://itviec.com/');
+$fb = facebook_count('http://graph.facebook.com/?id=https://itviec.com');
 
 echo "<pre>";
 print_r($fb);

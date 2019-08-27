@@ -7,7 +7,7 @@
  */
 
 
-$url = 'https://facebookapidat.herokuapp.com';
+$url = 'https://news.zing.vn';
 
 $apiUrl = 'https://graph.facebook.com/?ids='.$url;
 

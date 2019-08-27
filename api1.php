@@ -7,7 +7,7 @@
  */
 
 
-$url = 'http://www.texashillcountry.com';
+$url = 'https://facebookapidat.herokuapp.com';
 
 $apiUrl = 'https://graph.facebook.com/?ids='.$url;
 

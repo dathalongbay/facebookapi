@@ -8,12 +8,11 @@
 function fbLikeCount($id,$appid,$appsecret){
 
 
-    $json_url ="https://graph.facebook.com/".$id."?access_token=".$appid."|".$appsecret.
-    "&fields=total_count";
+    $json_url ="https://graph.facebook.com/".$id."?access_token=".$appid."|".$appsecret;
 
  $json = file_get_contents($json_url);
 
-
+var_dump($json);
  echo "<pre>";
  print_r($json);
  echo "</pre>";

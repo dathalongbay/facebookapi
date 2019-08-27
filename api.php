@@ -20,7 +20,7 @@ function facebook_count($url){
 
 }
 
-$fb = facebook_count('https://facebookapidat.herokuapp.com');
+$fb = facebook_count('https://itviec.com/');
 
 // facebook share count
 echo $fb[0]->share_count;

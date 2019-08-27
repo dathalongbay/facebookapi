@@ -5,33 +5,29 @@
  * Date: 8/27/2019
  * Time: 5:14 PM
  */
+function fbLikeCount($id,$appid,$appsecret){
 
 
-$url = 'https://news.zing.vn';
+    $json_url ="https://graph.facebook.com/".$id."?access_token=".$appid."|".$appsecret.
+    "&fields=fan_count";
 
-$apiUrl = 'https://graph.facebook.com/?ids='.$url;
+ $json = file_get_contents($json_url);
 
-//open connection
-$ch = curl_init();
-$timeout=5;
+ $json_output = json_decode($json);
 
-//set the url
-curl_setopt($ch,CURLOPT_URL, $apiUrl);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,false);
 
-//execute post
-$result = curl_exec($ch);
+ //Extract the likes count from the JSON object
 
-//close connection
-curl_close($ch);
+if($json_output->fan_count){
 
-$data = json_decode($result,true);
+    return $fan_count = $json_output->fan_count;
 
-echo '<pre>';
-print_r($data);
-echo '</pre>';
+}else{
 
-echo '<p>Likes: '.number_format($data[$url]['share']['share_count']).'</p>';
+    return 0;
+
+}
+
+}
+
+echo fbLikeCount("http://kenh14.vn/highlands-coffee-van-phuc-vu-do-nhua-cho-khach-nhu-mot-dieu-tat-nhien-nhieu-nguoi-lac-dau-ngan-ngam-vi-sao-nhat-dinh-khong-thay-doi-20190826160437245.chn","2083516388621698","e673f7d8caef2c39711074534489428c");

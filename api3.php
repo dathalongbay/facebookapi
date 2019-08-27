@@ -5,7 +5,14 @@
  * Date: 8/27/2019
  * Time: 6:29 PM
  */
+require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
 
+$fb = new \Facebook\Facebook([
+    'app_id' => '2083516388621698',
+    'app_secret' => 'e673f7d8caef2c39711074534489428c',
+    //'default_graph_version' => 'v2.10',
+    //'default_access_token' => '{access-token}', // optional
+]);
 
 try {
     // Returns a `Facebook\FacebookResponse` object

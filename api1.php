@@ -37,4 +37,4 @@ if($json_output->fan_count){
 
 }
 
-echo fbLikeCount("http://kenh14.vn/highlands-coffee-van-phuc-vu-do-nhua-cho-khach-nhu-mot-dieu-tat-nhien-nhieu-nguoi-lac-dau-ngan-ngam-vi-sao-nhat-dinh-khong-thay-doi-20190826160437245.chn","2083516388621698","e673f7d8caef2c39711074534489428c");
+echo fbLikeCount("oi-20190826160437245.chn","2083516388621698","e673f7d8caef2c39711074534489428c");

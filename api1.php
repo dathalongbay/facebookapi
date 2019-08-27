@@ -13,7 +13,15 @@ function fbLikeCount($id,$appid,$appsecret){
 
  $json = file_get_contents($json_url);
 
+
+ echo "<pre>";
+ print_r($json);
+ echo "</pre>";
  $json_output = json_decode($json);
+
+    echo "<pre>";
+    print_r($json_output);
+    echo "</pre>";
 
 
  //Extract the likes count from the JSON object

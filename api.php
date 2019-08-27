@@ -22,11 +22,6 @@ function facebook_count($url){
 
 $fb = facebook_count('https://itviec.com/');
 
-// facebook share count
-echo $fb[0]->share_count;
-
-// facebook like count
-echo $fb[0]->like_count;
-
-// facebook comment count
-echo $fb[0]->comment_count;
+echo "<pre>";
+print_r($fb);
+echo "</pre>";

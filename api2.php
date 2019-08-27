@@ -15,7 +15,6 @@ $fb = new \Facebook\Facebook([
     //'default_access_token' => '{access-token}', // optional
 ]);
 
-$access_token =  $fb->getAccessToken();
 
 // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 //   $helper = $fb->getRedirectLoginHelper();

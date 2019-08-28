@@ -18,7 +18,7 @@ try {
     // Returns a `Facebook\FacebookResponse` object
     $response = $fb->get(
         '?id=http://kenh14.vn/chung-kien-vo-su-danh-dap-vo-da-man-cong-dong-vo-viet-phan-no-doi-phe-luon-vo-cong-20190827161309651.chn&fields=engagement',
-        'EAAdm8nY6PYIBAD5tOTsSQJZBW0mLK6aK3kW2Ve2VBkNj33mMmBoHhk33KZBa6KgZBEW5hXoTAIs3ZAMudwGP5EDUiq2Dbm9d10Yp8ehMXud5mtgcmxzm9P99pEaLzgnWhVRceSqWv45tDDCZAfiB4kJziO53xrnmzQXJXuQecAPWmTW3JZCEyEtWZAq4ZBz7RlbcNDU3p5OZCTAZDZD'
+        '2083516388621698|IbqqQTjLq_HubJxVKkoPcr7Lh6M'
     );
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
     echo 'Graph returned an error: ' . $e->getMessage();
@@ -27,6 +27,7 @@ try {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
     exit;
 }
+
 $graphNode = $response->getGraphNode();
 
 echo "<pre>";

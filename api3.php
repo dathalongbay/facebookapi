@@ -17,7 +17,7 @@ $fb = new \Facebook\Facebook([
 try {
     // Returns a `Facebook\FacebookResponse` object
     $response = $fb->get(
-        '?id=http://kenh14.vn/chung-kien-vo-su-danh-dap-vo-da-man-cong-dong-vo-viet-phan-no-doi-phe-luon-vo-cong-20190827161309651.chn&fields=engagement',
+        '?id=https://beautyexpo.ngoisao.net/bai-du-thi/77.html&fields=engagement',
         '2083516388621698|IbqqQTjLq_HubJxVKkoPcr7Lh6M'
     );
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
